@@ -9,49 +9,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	<title>Parallax Design</title>
 
-	<script type="text/javascript" src="../bootstrap/js/nav.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('nav ul').onePageNav({
-			currentClass: 'active',
-			changeHash: false,
-			scrollSpeed: 750,
-			scrollThreshold: 0.5,
-			filter: '',
-			easing: 'swing',
-			});
-		});
-	</script>
-
-	<script type="text/javascript">
-
-		$(document).ready(function() {
-			$(".navbar-btn").on("click", function() {
-				$("nav ul").toggleClass("showing");
-			});
-		});
-
-		$(window).on("scroll", function() {
-			if ($(window).scrollTop()) {
-				$('nav').addClass('dark');
-			}
-			else {
-				$('nav').removeClass('dark');
-			}
-		});
-
-		$(window).scroll(function() {
-			var scrollValue = $(this).scrollTop();
-
-			$('.header-text').css('transform', 'translate(-50%, -'+(scrollValue/2 + 50)+'%)');
-			$('.sun').css('transform', 'translateY(-'+scrollValue/3+'%)');
-		});
-
-		$(document).on("click", "ul li", function() {
-			$(this).addClass("active").siblings().removeClass("active");
-		});
-
-	</script>
+	<script type="text/javascript" src="bootstrap/js/nav.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
 
 </head>
 <body>
@@ -75,7 +34,7 @@
 		</div>
 		<div class="sun"></div>
 		<div class="mountains">
-			<img src="/img/mountains.png" alt="">
+			<img src="img/mountains.png" alt="">
 		</div>
 	</header>
 
@@ -88,16 +47,12 @@
 		</article>
 	</section>
 
-	<!-- <div class="img2"></div> -->
-
 	<section id="blogSec">
 		<article>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum ea fugiat fuga, eveniet sed, numquam sequi laboriosam veniam obcaecati earum repellat cum in vitae totam iure reiciendis, eius autem id cumque facere? Ullam eum corporis blanditiis vitae itaque iusto aperiam voluptas velit in molestias perferendis reiciendis dolor, animi cupiditate voluptate cumque sint ea, quas optio accusantium quae officiis deleniti nemo! Debitis, libero, nobis, delectus natus ea nisi sint commodi error sequi maiores amet dolor. Nihil reprehenderit quo excepturi labore odit sequi molestiae deleniti illo nostrum ad id explicabo non fuga quos rerum, facere ipsam autem est, nobis, pariatur eum recusandae iste sit a! Modi dicta tempora similique natus recusandae error iste dolor amet ratione quibusdam soluta doloribus porro cumque nesciunt quod maiores sapiente eius est hic illum fuga, sequi consectetur numquam itaque temporibus. Tempore, ratione commodi nam voluptates cum sint explicabo, illo odio aliquid quaerat ut placeat velit itaque!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut veniam suscipit! Adipisci optio, ea accusamus laudantium atque sint laborum in minima illum est iste laboriosam earum necessitatibus dolor maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe praesentium ab cum excepturi, voluptas blanditiis, nihil voluptatem natus dolorum esse quos eaque mollitia! Deleniti inventore reprehenderit, facilis officia ipsam repudiandae!</p>
 		</article>
 	</section>
-
-	<!-- <div class="img3"></div> -->
 
 	<section id="contactSec">
 		<form action="" method="POST">
