@@ -28,6 +28,8 @@ header {
 	-webkit-background-size: cover;
 	background-size: cover;
 	/*background-attachment: fixed;*/
+	display: flex;
+	justify-content: center;
 }
 
 nav {
@@ -140,6 +142,8 @@ ul.active li a,
 }
 
 .mountains {
+	width: 100%;
+	max-width: 2000px;
 	position: absolute;
 	bottom: -80px;
 	left: 0;
